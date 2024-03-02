@@ -29,32 +29,32 @@ const NavBar = () => {
                 </div>
                 <Link className="btn btn-ghost text-xl">
                     <img className='h-6' src={logo} alt="" />
-                    <span>Shafi Academi</span>
+                    <span className='text-white font-semibold'>Shafi Academi</span>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <Link>Courses</Link>
+                        <Link  className='text-white font-semibold'>Courses</Link>
                     </li>
 
                     <li>
-                        <Link>FAQ</Link>
+                        <Link  className='text-white font-semibold'>FAQ</Link>
                     </li>
                     <li>
-                        <Link>Blog</Link>
+                        <Link  className='text-white font-semibold'>Blog</Link>
                     </li>
                 </ul>
             </div>
                 <div className="form-control lg:mx-3">
             
                     <label className="label cursor-pointer">
-                        <span className="label-text text-xs mr-0 lg:mx-1 lg:min-w-[31px]">{checked ? "Dark" : "Light"}</span>
+                        <span className="label-text text-xs text-white font-semibold mr-0 lg:mx-1 lg:min-w-[31px]">{checked ? "Dark" : "Light"}</span>
                         <input onChange={() => setChecked(!checked)} type="checkbox" className="toggle toggle-xs lg:toggle-sm ml-1 mr-4" checked={checked} />
                     </label>
             </div>
             <div className="navbar-end">
-               <FaUserAlt className="ml-2 mr-1 md:mx-4" />
+               <FaUserAlt className="ml-2 mr-1 md:mx-4 text-white" />
             </div>
         </div>
     );

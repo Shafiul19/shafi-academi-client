@@ -12,7 +12,8 @@ import Courses from "../pages/Courses/Courses/Courses";
       children: [
         {
             path: '/',
-            element: <Home></Home>
+            element: <Home></Home>,
+            loader: () => fetch("http://localhost:5000/courses"),
         },
         {
           path: "/courses",

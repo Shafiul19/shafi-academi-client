@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import Course from '../Course/Course';
 
 const Courses = () => {
     const courses = useLoaderData();
@@ -13,6 +14,13 @@ const Courses = () => {
                 </p>
                 ))}
                 
+            </div>
+             
+            <div className="lg:col-span-9 rounded-lg grid lg:grid-cols-2 gap-x-3 gap-y-8">
+                {courses.map((course) => (
+                <Course key={course._id} course={course}></Course>
+                ))}
+            
             </div>
           
     </div>

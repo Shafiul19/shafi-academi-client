@@ -5,6 +5,10 @@ const CourseDetail = () => {
     const course = useLoaderData();
     const navigate = useNavigate();
     const { _id, title, price, img, details, rating } = course;
+
+    const handleNavigate = () => {
+    navigate(`/checkout/${_id}`);
+  };
     return (
         <div className="w-9/12 mx-auto mt-20">
             <h2 className="text-4xl font-semibold mb-6 text-center">
@@ -18,7 +22,7 @@ const CourseDetail = () => {
 
             <p className="font-bold my-3">Rating: {rating}</p>
             <p className="font-bold mb-3">Price: ${price}</p>
-            <button className="btn glass     ">
+            <button onClick={handleNavigate} className="btn glass     ">
                 Get premium access
                 
             </button>

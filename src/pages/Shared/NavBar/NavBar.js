@@ -8,7 +8,7 @@ const NavBar = () => {
     const [checked, setChecked] = useState(true);
 
     return (
-        <div className="navbar fixed top-0 z-10 bg-orange-400">
+        <div className="navbar fixed top-0 z-10 bg-primary">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

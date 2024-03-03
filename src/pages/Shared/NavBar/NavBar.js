@@ -46,12 +46,12 @@ const NavBar = () => {
                     </li>
                 </ul>
             </div>
-                <div className="form-control lg:mx-3">
+            <div className="form-control lg:mx-3">
             
-                    <label className="label cursor-pointer">
-                        <span className="label-text text-xs text-white font-semibold mr-0 lg:mx-1 lg:min-w-[31px]">{checked ? "Dark" : "Light"}</span>
-                        <input onChange={() => setChecked(!checked)} type="checkbox" className="toggle toggle-xs lg:toggle-sm ml-1 mr-4" checked={checked} />
-                    </label>
+                <label className="label cursor-pointer">
+                    <span className="label-text text-xs text-white font-semibold mr-0 lg:mx-1 lg:min-w-[31px]">{checked ? "Dark" : "Light"}</span>
+                    <input onChange={() => setChecked(!checked)} type="checkbox" className="toggle toggle-xs lg:toggle-sm ml-1 mr-4" checked={checked} />
+                </label>
             </div>
             <div className="navbar-end">
                <FaUserAlt className="ml-2 mr-1 md:mx-4 text-white" />

@@ -23,7 +23,7 @@ const NavBar = () => {
                             <Link>FAQ</Link>
                         </li>
                         <li>
-                            <Link>Blog</Link>
+                            <Link to ="/blog">Blog</Link>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@ const NavBar = () => {
                         <Link  className='text-white font-semibold'>FAQ</Link>
                     </li>
                     <li>
-                        <Link  className='text-white font-semibold'>Blog</Link>
+                        <Link to ="/blog" className='text-white font-semibold'>Blog</Link>
                     </li>
                 </ul>
             </div>

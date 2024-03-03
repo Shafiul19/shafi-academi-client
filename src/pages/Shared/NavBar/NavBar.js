@@ -8,7 +8,7 @@ const NavBar = () => {
     const [checked, setChecked] = useState(true);
 
     return (
-        <div className="navbar bg-orange-400">
+        <div className="navbar fixed top-0 z-10 bg-orange-400">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const NavBar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <Link>Courses</Link>
+                            <Link to = "/courses">Courses</Link>
                         </li>
 
                         <li>
@@ -35,7 +35,7 @@ const NavBar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <Link  className='text-white font-semibold'>Courses</Link>
+                        <Link to = "/courses" className='text-white font-semibold'>Courses</Link>
                     </li>
 
                     <li>

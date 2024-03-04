@@ -20,7 +20,7 @@ const NavBar = () => {
                         </li>
 
                         <li>
-                            <Link>FAQ</Link>
+                            <Link to ="/faq">FAQ</Link>
                         </li>
                         <li>
                             <Link to ="/blog">Blog</Link>
@@ -39,7 +39,7 @@ const NavBar = () => {
                     </li>
 
                     <li>
-                        <Link  className='text-white font-semibold'>FAQ</Link>
+                        <Link to ="/faq" className='text-white font-semibold'>FAQ</Link>
                     </li>
                     <li>
                         <Link to ="/blog" className='text-white font-semibold'>Blog</Link>

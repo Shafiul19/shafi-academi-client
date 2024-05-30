@@ -9,6 +9,7 @@ import Checkout from "../pages/Courses/Checkout/Checkout";
 import Blog from "../pages/Blog/Blog";
 import Faq from "../pages/Faq/Faq";
 import Login from "../pages/Login/Login";
+import Register from "../pages/Login/Register";
 
   export const routes = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ import Login from "../pages/Login/Login";
         {
           path: "/login",
           element: <Login></Login>
+        },
+        {
+          path: "/register",
+          element: <Register></Register>
         }
       ]
     },

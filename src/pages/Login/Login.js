@@ -1,6 +1,7 @@
 import React from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -29,17 +30,22 @@ const Login = () => {
                     </div>
                     </form>
 
-                    <div className="flex flex-col w-full px-8 border-opacity-50 pb-14">
+                    <div className="flex flex-col w-full px-8 border-opacity-50 pb-10">
                         <div className="divider">OR</div>
                       
-                        <button type="button" className="btn btn-outline btn-ghost mb-4">
+                        <button type="button" className="btn btn-outline btn-primary mb-4">
                             <FcGoogle />
                             <span className="ml-4 uppercase">Sign In With Google</span>
                         </button>
-                        <button type="button" className="btn btn-outline btn-ghost">
+                        <button type="button" className="btn btn-outline btn-primary">
                             <FaGithub />
                             <span className="ml-4 uppercase">Sign In With Github</span>
                         </button>
+                        <label className="label">
+                        <Link to="/register" className="label-text-alt link link-hover">
+                            New to the site? <span className="text-primary">Register Here</span>
+                        </Link>
+            </label>
                         
                     </div>
                    

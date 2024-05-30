@@ -8,6 +8,7 @@ import CourseDetail from "../pages/Courses/CourseDetail/CourseDetail";
 import Checkout from "../pages/Courses/Checkout/Checkout";
 import Blog from "../pages/Blog/Blog";
 import Faq from "../pages/Faq/Faq";
+import Login from "../pages/Login/Login";
 
   export const routes = createBrowserRouter([
     {
@@ -44,6 +45,10 @@ import Faq from "../pages/Faq/Faq";
           element: <Blog></Blog>
           
         },
+        {
+          path: "/login",
+          element: <Login></Login>
+        }
       ]
     },
   ]);

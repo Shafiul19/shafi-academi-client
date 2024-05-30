@@ -54,6 +54,7 @@ const NavBar = () => {
                 </label>
             </div>
             <div className="navbar-end">
+                <span><Link to="/login" className='btn btn-outline text-white uppercase'>Log in</Link></span>
                <FaUserAlt className="ml-2 mr-1 md:mx-4 text-white" />
             </div>
         </div>
